@@ -1,4 +1,3 @@
 # Ignore all executable and object files
 
-**/bin/*.o
-**/bin/*.exe
+**/bin/
