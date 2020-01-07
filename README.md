@@ -43,6 +43,8 @@ A tree defining the structure of this repo.
 |**Chapter 1**|---|---|
 |Hello, World!|[1-1](./C/1/1.c)|[1-1](./rustlang/1/1.rs)|
 |Printing with backlashed characters|[1-2](./C/1/2.c)|[1-2](./rustlang/1/2.rs)|
+|Fahrenheit to Celsius table|[1-3](./C/1/3.c)|[1-3](./rustlang/1/3.rs)|
+|Celsius to Fahrenheit table|[1-4](./C/1/4.c)|[1-4](./rustlang/1/4.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|
