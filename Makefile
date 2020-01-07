@@ -17,19 +17,24 @@ all: c.exe rust.exe
 
 c.exe:
 	@for chapter in {1..8}; do \
+		# loop trough all files with C extension \
 	    for file in $$(find ${C_FOLDER_PATH}/$$chapter -name *.c -type f ! -size 0); do \
+			# Strip file path, keeping only exercise number \
 			number=$$(basename $$file .c); \
 			echo "$(CC) $$file $(CFLAGS) -o ${C_BIN_PATH}/$$chapter-$$number"; \
+			# Main compilation command \
 			$(CC) $$file $(CFLAGS) -o ${C_BIN_PATH}/$$chapter-$$number; \
 		done \
 	done
 
-
 rust.exe:
 	@for chapter in {1..8}; do \
+		# loop trough all files with Rust extension \
 	    for file in $$(find ${RUST_FOLDER_PATH}/$$chapter -name *.rs -type f ! -size 0); do \
+			# Strip file path, keeping only exercise number \
 			number=$$(basename $$file .rs); \
 			echo "$(RUSTC) $$file $(RUSTFLAGS) -o ${RUST_BIN_PATH}/$$chapter-$$number"; \
+			# Main compilation command \
 			$(RUSTC) $$file $(RUSTFLAGS) -o ${RUST_BIN_PATH}/$$chapter-$$number; \
 		done \
 	done
@@ -38,11 +43,6 @@ rust.exe:
 .PHONY: clean
 
 clean:
-	# @echo "Cleaning objects and such"
-	# @for pattern in '*~' '*.o' '*.d' '*.exe' ; do \
-	# 	find . -name "$$pattern" -print0 | xargs -0 rm ; \
-	# done
-
 	@echo "Cleaning everything inside ${C_BIN_PATH} and ${RUST_BIN_PATH}"
 	find ${C_BIN_PATH} -type f ! -size 0 -print0 | xargs -0 rm; \
 	find ${RUST_BIN_PATH} -type f ! -size 0 -print0 | xargs -0 rm; \

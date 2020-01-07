@@ -36,26 +36,27 @@ A tree defining the structure of this repo.
 
 ## Table of Contents
 
-### The exercises are linked in the table below using the same pattern from the book (e.g. `[chapter]-[number]`).
+ The exercises are linked in the table below using the same pattern from the book (e.g. `[chapter]-[number]`).
 
-|  `C` |  `Rust` |
-|:----:|:---------:|
-|**Chapter 1**|
-|[1-1](./c/1/1.c)|[1-1](./rustlang/1/1.rs)|
-|**Chapter 2**|
-|[TBI](./c/)|[TBI](./rustlang/)|
-|**Chapter 3**|
-|[TBI](./c/)|[TBI](./rustlang/)|
-|**Chapter 4**|
-|[TBI](./c/)|[TBI](./rustlang/)|
-|**Chapter 5**|
-|[TBI](./c/)|[TBI](./rustlang/)|
-|**Chapter 6**|
-|[TBI](./c/)|[TBI](./rustlang/)|
-|**Chapter 7**|
-|[TBI](./c/)|[TBI](./rustlang/)|
-|**Chapter 8**|
-|[TBI](./c/)|[TBI](./rustlang/)|
+| Description |  `C` |  `Rust` |
+|:------------:|:----:|:---------:|
+|**Chapter 1**|---|---|
+|Just a "Hello World!"|[1-1](./C/1/1.c)|[1-1](./rustlang/1/1.rs)|
+|Printing some uncommon characters|[1-2](./C/1/2.c)|[1-2](./rustlang/1/2.rs)|
+|**Chapter 2**|---|---|
+||[TBI](./C/)|[TBI](./rustlang/)|
+|**Chapter 3**|---|---|
+||[TBI](./C/)|[TBI](./rustlang/)|
+|**Chapter 4**|---|---|
+||[TBI](./C/)|[TBI](./rustlang/)|
+|**Chapter 5**|---|---|
+||[TBI](./C/)|[TBI](./rustlang/)|
+|**Chapter 6**|---|---|
+||[TBI](./C/)|[TBI](./rustlang/)|
+|**Chapter 7**|---|---|
+||[TBI](./C/)|[TBI](./rustlang/)|
+|**Chapter 8**|---|---|
+||[TBI](./C/)|[TBI](./rustlang/)|
 
 ## Resources
 
