@@ -41,8 +41,8 @@ A tree defining the structure of this repo.
 | Description |  `C` |  `Rust` |
 |:------------:|:----:|:---------:|
 |**Chapter 1**|---|---|
-|Just a "Hello World!"|[1-1](./C/1/1.c)|[1-1](./rustlang/1/1.rs)|
-|Printing some uncommon characters|[1-2](./C/1/2.c)|[1-2](./rustlang/1/2.rs)|
+|Hello, World!|[1-1](./C/1/1.c)|[1-1](./rustlang/1/1.rs)|
+|Printing with backlashed characters|[1-2](./C/1/2.c)|[1-2](./rustlang/1/2.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|
