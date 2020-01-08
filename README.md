@@ -48,6 +48,9 @@ A tree defining the structure of this repo.
 |Fahrenheit to Celsius in reversed order (_for_ loops)|[1-5](./C/1/5.c)|[1-5](./rustlang/1/5.rs)|
 |I/O with _getchar_ and _putchar_|[1-6](./C/1/6.c)|[1-6](./rustlang/1/6.rs)|
 |Checking _EOF_ value|[1-7](./C/1/7.c)|[1-7](./rustlang/1/7.rs)|
+|Counting blanks, tabs and newlines from stdin|[1-8](./C/1/8.c)|[1-8](./rustlang/1/8.rs)|
+|Replacing blanks from stdin|[1-9](./C/1/9.c)|[1-9](./rustlang/1/9.rs)|
+|Replacing tabs, backspaces and backlashes from stdin|[1-10](./C/1/10.c)|[1-10](./rustlang/1/10.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|
