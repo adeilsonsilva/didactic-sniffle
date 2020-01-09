@@ -51,6 +51,8 @@ A tree defining the structure of this repo.
 |Counting blanks, tabs and newlines from stdin|[1-8](./C/1/8.c)|[1-8](./rustlang/1/8.rs)|
 |Replacing blanks from stdin|[1-9](./C/1/9.c)|[1-9](./rustlang/1/9.rs)|
 |Replacing tabs, backspaces and backlashes from stdin|[1-10](./C/1/10.c)|[1-10](./rustlang/1/10.rs)|
+|Implementing _wc_ unix program and questioning its behavior|[1-11](./C/1/11.c)|[1-11](./rustlang/1/11.rs)|
+|Reading stdin and printing one word per line|[1-12](./C/1/12.c)|[1-12](./rustlang/1/12.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|
