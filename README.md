@@ -55,6 +55,7 @@ A tree defining the structure of this repo.
 |Reading stdin and printing one word per line|[1-12](./C/1/12.c)|[1-12](./rustlang/1/12.rs)|
 |Drawing an histogram of the length of words from input|[1-13](./C/1/13.c)|[1-13](./rustlang/1/13.rs)|
 |Drawing an histogram of the frequencies of chars from input|[1-14](./C/1/14.c)|[1-14](./rustlang/1/14.rs)|
+|A _function_ to convert Fahrenheit to Celsius|[1-15](./C/1/15.c)|[1-15](./rustlang/1/15.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|
