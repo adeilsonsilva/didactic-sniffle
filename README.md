@@ -53,6 +53,8 @@ A tree defining the structure of this repo.
 |Replacing tabs, backspaces and backlashes from stdin|[1-10](./C/1/10.c)|[1-10](./rustlang/1/10.rs)|
 |Implementing _wc_ unix program and questioning its behavior|[1-11](./C/1/11.c)|[1-11](./rustlang/1/11.rs)|
 |Reading stdin and printing one word per line|[1-12](./C/1/12.c)|[1-12](./rustlang/1/12.rs)|
+|Drawing an histogram of the length of words from input|[1-13](./C/1/13.c)|[1-13](./rustlang/1/13.rs)|
+|Drawing an histogram of the frequencies of chars from input|[1-14](./C/1/14.c)|[1-14](./rustlang/1/14.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|
