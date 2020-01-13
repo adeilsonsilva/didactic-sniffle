@@ -1,3 +1,6 @@
+# Use same shell accross diferent systems
+SHELL=/bin/bash    # Using "/bin/sh" causes different behavior for the commands below
+
 # Compilers
 CC=gcc
 RUSTC=rustc
@@ -18,7 +21,7 @@ all: c.exe rust.exe
 c.exe:
 	@for chapter in {1..8}; do \
 		# loop trough all files with C extension \
-	    for file in $$(find ${C_FOLDER_PATH}/$$chapter -name *.c -type f ! -size 0); do \
+		for file in $$(find ${C_FOLDER_PATH}/$$chapter -name *.c -type f ! -size 0); do \
 			# Strip file path, keeping only exercise number \
 			number=$$(basename $$file .c); \
 			echo "$(CC) $$file $(CFLAGS) -o ${C_BIN_PATH}/$$chapter-$$number"; \
@@ -30,7 +33,7 @@ c.exe:
 rust.exe:
 	@for chapter in {1..8}; do \
 		# loop trough all files with Rust extension \
-	    for file in $$(find ${RUST_FOLDER_PATH}/$$chapter -name *.rs -type f ! -size 0); do \
+		for file in $$(find ${RUST_FOLDER_PATH}/$$chapter -name *.rs -type f ! -size 0); do \
 			# Strip file path, keeping only exercise number \
 			number=$$(basename $$file .rs); \
 			echo "$(RUSTC) $$file $(RUSTFLAGS) -o ${RUST_BIN_PATH}/$$chapter-$$number"; \
