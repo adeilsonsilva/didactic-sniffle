@@ -57,6 +57,7 @@ A tree defining the structure of this repo.
 |Drawing an histogram of the frequencies of chars from input|[1-14](./C/1/14.c)|[1-14](./rustlang/1/14.rs)|
 |A _function_ to convert Fahrenheit to Celsius|[1-15](./C/1/15.c)|[1-15](./rustlang/1/15.rs)|
 |Computing the longest line from input (using _arrays_ and _functions_)|[1-16](./C/1/16.c)|[1-16](./rustlang/1/16.rs)|
+|Printing lines from input greater than threshold (using _arrays_ and _functions_)|[1-17](./C/1/17.c)|[1-17](./rustlang/1/17.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|
