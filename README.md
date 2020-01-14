@@ -58,6 +58,8 @@ A tree defining the structure of this repo.
 |A _function_ to convert Fahrenheit to Celsius|[1-15](./C/1/15.c)|[1-15](./rustlang/1/15.rs)|
 |Computing the longest line from input (using _arrays_ and _functions_)|[1-16](./C/1/16.c)|[1-16](./rustlang/1/16.rs)|
 |Printing lines from input greater than threshold (using _arrays_ and _functions_)|[1-17](./C/1/17.c)|[1-17](./rustlang/1/17.rs)|
+|Removing trailing whitespaces/blanks/tabs from input (using _arrays_ and _functions_)|[1-18](./C/1/18.c)|[1-18](./rustlang/1/18.rs)|
+|Reversing strings (using _arrays_ and _functions_)|[1-19](./C/1/19.c)|[1-19](./rustlang/1/19.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|

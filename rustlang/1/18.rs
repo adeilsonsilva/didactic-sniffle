@@ -1,15 +1,10 @@
 use std::io;
 
-/// Print the longest input line.
-/// Differing from the C implementation, we don't
-/// need to set a max string size.
+/// Remove trailing blanks and whitespaces, delete blank lines.
 fn main ()
 {
     // a mutable variable to hold input data
     let mut input = String::new();
-
-    let mut max : usize = 0;
-    let mut longest = String::new();
 
     // using rust infinite loop
     loop {
@@ -22,13 +17,10 @@ fn main ()
                 }
 
                 // In Rust it's a bit easier to do...
-                // Check documentation, tough, because of how strings are handled
-                if input.chars().count() > max {
-                    // About using str.len(): "This length is in bytes, not chars or 
-                    // graphemes. In other words, it may not be what a human considers
-                    // the length of the string."
-                    max = input.chars().count();
-                    longest = input.clone();
+                // We need to delete entirely blank lines.
+                if input.chars().count() > 1 {
+                    let trimmed = trim(&input);
+                    println!("READ: {:04}; NEW SIZE: {:04} | {}", input.chars().count(), trimmed.chars().count(), trimmed);
                 }
 
                 // we need to clear input buffer because "read_line" appends all read bytes to it
@@ -39,7 +31,9 @@ fn main ()
             }
         }
     }
+}
 
-    print!("SIZE: {:04} | \"{}\"\n", max, longest);
-
+/// A function that borrows the original input and return it trimmed.
+fn trim (original : &String) -> &str {
+    original.trim_end()
 }

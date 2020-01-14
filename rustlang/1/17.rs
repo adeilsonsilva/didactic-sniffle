@@ -1,8 +1,6 @@
 use std::io;
 
-/// Print the longest input line.
-/// Differing from the C implementation, we don't
-/// need to set a max string size.
+/// Print all input lines that are longer than 80 characters.
 fn main ()
 {
     // a mutable variable to hold input data
@@ -20,8 +18,6 @@ fn main ()
 
                 // In Rust it's a bit easier to do...
                 if input.chars().count() > 80 {
-                    // "This length is in bytes, not chars or graphemes. In other words,
-                    // it may not be what a human considers the length of the string."
                     println!("SIZE: {:04} | \"{}\"", input.chars().count(), input);
                 }
 

@@ -1,15 +1,10 @@
 use std::io;
 
-/// Print the longest input line.
-/// Differing from the C implementation, we don't
-/// need to set a max string size.
+/// Remove trailing blanks and whitespaces, delete blank lines.
 fn main ()
 {
     // a mutable variable to hold input data
     let mut input = String::new();
-
-    let mut max : usize = 0;
-    let mut longest = String::new();
 
     // using rust infinite loop
     loop {
@@ -22,14 +17,8 @@ fn main ()
                 }
 
                 // In Rust it's a bit easier to do...
-                // Check documentation, tough, because of how strings are handled
-                if input.chars().count() > max {
-                    // About using str.len(): "This length is in bytes, not chars or 
-                    // graphemes. In other words, it may not be what a human considers
-                    // the length of the string."
-                    max = input.chars().count();
-                    longest = input.clone();
-                }
+                let reversed = reverse(&input);
+                println!("READ: {:04}; | {}", input.chars().count(), reversed);
 
                 // we need to clear input buffer because "read_line" appends all read bytes to it
                 input.clear();
@@ -39,7 +28,12 @@ fn main ()
             }
         }
     }
+}
 
-    print!("SIZE: {:04} | \"{}\"\n", max, longest);
-
+/// A function that borrows the original input and return it reversed.
+fn reverse (original : &String) -> String {
+    // to match C code we remove trailing newlines
+    // also, we use trait methods to reverse char order and collect everything
+    // into a new String object
+    original.trim_end_matches('\n').chars().rev().collect::<String>()
 }
