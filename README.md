@@ -60,6 +60,8 @@ A tree defining the structure of this repo.
 |Printing lines from input greater than threshold (using _arrays_ and _functions_)|[1-17](./C/1/17.c)|[1-17](./rustlang/1/17.rs)|
 |Removing trailing whitespaces/blanks/tabs from input (using _arrays_ and _functions_)|[1-18](./C/1/18.c)|[1-18](./rustlang/1/18.rs)|
 |Reversing strings (using _arrays_ and _functions_)|[1-19](./C/1/19.c)|[1-19](./rustlang/1/19.rs)|
+|A program to _detab_ (replace tabs with a _constant_ number of whitespaces)|[1-20](./C/1/20.c)|[1-20](./rustlang/1/20.rs)|
+|A program to _entab_ (replace blanks with the minimum amount of tabs and blanks) [**INCOMPLETE**]|[1-21](./C/1/21.c)|[1-21](./rustlang/1/21.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|
