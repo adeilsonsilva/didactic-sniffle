@@ -1,40 +1,72 @@
 use std::io;
 
-const TABSTOPS : i32 = 4;
+const TABSTOP : i32 = 8;
 
-/// A program 'detab' that replaces tabs in the input with the proper number of
-/// blanks to space to the next tab stop.
+/// A program entab that replaces strings of blanks by the minimum number of tabs
+/// and blanks to achieve the same spacing. Check C code for a better undertanding
+/// of what a TABSTOP is.
 fn main ()
 {
-    // a mutable variable to hold input data
     let mut input = String::new();
 
-    // using rust infinite loop
+    enum STATE {
+        OUT = 0,
+        IN = 1
+    }
+
     loop {
         match io::stdin().read_line(&mut input) {
-            // io::Result::Ok receives the number of bytes read
             Ok (n_bytes) => {
-                // case EOF is reached, "read_lines" will return 0 and we break out of the loop
                 if n_bytes == 0 {
                     break;
                 }
 
-                // iterate list of chars read from input
+                let mut _state = STATE::OUT;
+                let (mut base_column, mut current_column) = (0, 0);
+
                 for _c in input.chars() {
 
-                    match _c {
-                        '\t' => {
-                            for _ in 1..TABSTOPS {
-                                print!(" ");
+                    if let STATE::OUT = _state {
+                        match _c {
+                            '\t' | ' ' => {
+                                _state = STATE::IN;
+                                base_column = current_column;
+                            },
+                            _ => {
+                                print!("{}", _c);
                             }
-                        },
-                        _ => {
-                            print!("{}", _c);
                         }
+                    } else if let STATE::IN = _state {
+                        match _c {
+                            '\t' | ' ' => { },
+                            _ => {
+                                _state = STATE::OUT;
+
+                                while base_column + (TABSTOP - base_column % TABSTOP) <= current_column {
+                                    base_column += TABSTOP - base_column % TABSTOP;
+                                    print!("\t");
+                                }
+
+                                while (base_column + 1) <= current_column {
+                                    base_column += 1;
+                                    print!(" ");
+                                }
+
+                                print!("{}", _c);
+                            }
+                        }
+                    }
+
+                    // We don't need to deal with newline characters, 'read_line'
+                    // does it for us.
+                    // Using rust expression assignment
+                    current_column += if _c == '\t' {
+                        (TABSTOP - current_column % TABSTOP)
+                    } else {
+                        1
                     }
                 }
 
-                // we need to clear input buffer because "read_line" appends all read bytes to it
                 input.clear();
             },
             Err(_) => {
