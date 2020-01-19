@@ -66,7 +66,7 @@ A tree defining the structure of this repo.
 |A program to remove all comments from a C source file|[1-23](./C/1/23.c)|[1-23](./rustlang/1/23.rs)|
 |A program to check a C source file for rudimentary syntax errors.|[1-24](./C/1/24.c)|[1-24](./rustlang/1/24.rs)|
 |**Chapter 2**|---|---|
-||[TBI](./C/)|[TBI](./rustlang/)|
+|Checking ranges of basic data types.|[2-1](./C/2/1.c)|[2-1](./rustlang/2/1.rs)|
 |**Chapter 3**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 4**|---|---|
