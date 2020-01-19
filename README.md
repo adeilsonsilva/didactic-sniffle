@@ -64,6 +64,7 @@ A tree defining the structure of this repo.
 |A program to _entab_ (replace blanks with the minimum amount of tabs and blanks)|[1-21](./C/1/21.c)|[1-21](./rustlang/1/21.rs)|
 |A program to _fold_ lines at a given limit|[1-22](./C/1/22.c)|[1-22](./rustlang/1/22.rs)|
 |A program to remove all comments from a C source file|[1-23](./C/1/23.c)|[1-23](./rustlang/1/23.rs)|
+|A program to check a C source file for rudimentary syntax errors.|[1-24](./C/1/24.c)|[1-24](./rustlang/1/24.rs)|
 |**Chapter 2**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 3**|---|---|
