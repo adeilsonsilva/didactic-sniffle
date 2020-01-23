@@ -67,6 +67,7 @@ A tree defining the structure of this repo.
 |A program to check a C source file for rudimentary syntax errors.|[1-24](./C/1/24.c)|[1-24](./rustlang/1/24.rs)|
 |**Chapter 2**|---|---|
 |Checking ranges of basic data types.|[2-1](./C/2/1.c)|[2-1](./rustlang/2/1.rs)|
+|Learning about logical operators.|[2-2](./C/2/2.c)|[2-2](./rustlang/2/2.rs)|
 |**Chapter 3**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 4**|---|---|
