@@ -68,6 +68,7 @@ A tree defining the structure of this repo.
 |**Chapter 2**|---|---|
 |Checking ranges of basic data types.|[2-1](./C/2/1.c)|[2-1](./rustlang/2/1.rs)|
 |Learning about logical operators.|[2-2](./C/2/2.c)|[2-2](./rustlang/2/2.rs)|
+|Converting hex strings to integer values.|[2-3](./C/2/3.c)|[2-3](./rustlang/2/3.rs)|
 |**Chapter 3**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 4**|---|---|

@@ -6,7 +6,7 @@ CC=gcc
 RUSTC=rustc
 
 # Compilers flags
-CFLAGS=-ansi -pedantic # Use ANSI C standards
+CFLAGS=-ansi -pedantic -lm # Use ANSI C standards
 RUSTFLAGS=
 
 # Paths
