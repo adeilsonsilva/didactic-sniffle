@@ -1,6 +1,4 @@
-/**
- * A program to convert hex to integer.
- */
+/// A program to convert hex to integer.
 fn main ()
 {
     let hex_a = String::from("0x7DE");
@@ -10,12 +8,12 @@ fn main ()
     let hex_e = String::from("ffffffffff");
     let hex_f = String::from("0X0a");
 
-    println!("{} : {:.2}", hex_a, htoi(&hex_a));
-    println!("{} : {:.2}", hex_b, htoi(&hex_b));
-    println!("{} : {:.2}", hex_c, htoi(&hex_c));
-    println!("{} : {:.2}", hex_d, htoi(&hex_d));
-    println!("{} : {:.2}", hex_e, htoi(&hex_e));
-    println!("{} : {:.2}", hex_f, htoi(&hex_f));
+    println!("{} : {}", hex_a, htoi(&hex_a));
+    println!("{} : {}", hex_b, htoi(&hex_b));
+    println!("{} : {}", hex_c, htoi(&hex_c));
+    println!("{} : {}", hex_d, htoi(&hex_d));
+    println!("{} : {}", hex_e, htoi(&hex_e));
+    println!("{} : {}", hex_f, htoi(&hex_f));
 }
 
 /// A function which converts a string of hexadecimal digits (including an optional
@@ -24,14 +22,14 @@ fn main ()
 /// 
 /// @param &String s      A reference to a string of hexadecimal digits
 /// 
-/// @return f64           Integer result of operation
-fn htoi(s : &String) -> f64
+/// @return i64           An integer number resultant from conversion
+fn htoi(s : &String) -> i64
 {
     let _size = s.chars().count();
     let mut i = 0;
-    let mut result : f64 = 0.0;
+    let mut result : i64 = 0;
 
-    /* Dealing with leading '0x' */
+    // Dealing with leading '0x'
     if _size > 2 
         && s.chars().nth(0) == Some('0') 
         && (s.chars().nth(1) == Some('x') || s.chars().nth(1) == Some('X'))
@@ -39,28 +37,30 @@ fn htoi(s : &String) -> f64
         i = 2;
     }
 
-    let mut base = (_size - i) - 1;
+    // _size is from type 'usize', hence the cast
+    let mut base : i32 = ((_size - i) - 1) as i32;
 
-    s
-    .chars()
-    .skip(i)
-    .for_each(|_c| {
+    for _c in s
+            .chars() // iterate trough the chars of the string
+            .skip(i) // skip leading '0x' or '0X'
+    {
         let value = _c.to_digit(16);
-
-        println!("{} {:?}", base, value);
 
         match value {
             None => {
-                result = -1.0;
-                return;
+                result = -1;
+                break;
             },
             _ => {
-                result += value.unwrap() as f64 * 16_usize.pow(base as u32) as f64;
+                // 'to_digit' returns an 'Option<u32>', so we need to 'unwrap' it (E0369)
+                // we need to specify '16' type (E0689)
+                // as 'result' is a i64, we need to cast all operands (E0277)
+                result += value.unwrap() as i64 * 16_usize.pow(base as u32) as i64;
                 i += 1;
                 base -= 1;
             }
         }
-    });
+    };
 
     return result;
 }

@@ -24,6 +24,6 @@ fn main ()
 
     // In C, floating point types are implementation-defined. Rust has more
     // constraints about that.
-    print!("\t[+] f32: [{}, {}]\n", std::f32::MIN, std::f32::MAX);
-    print!("\t[+] f64: [{}, {}]\n", std::f64::MIN, std::f64::MAX);
+    print!("\t[+] f32: [{:e}, {:e}]\n", std::f32::MIN, std::f32::MAX);
+    print!("\t[+] f64: [{:e}, {:e}]\n", std::f64::MIN, std::f64::MAX);
 }
