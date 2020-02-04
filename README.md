@@ -70,6 +70,7 @@ A tree defining the structure of this repo.
 |Learning about logical operators.|[2-2](./C/2/2.c)|[2-2](./rustlang/2/2.rs)|
 |Converting hex strings to integer values.|[2-3](./C/2/3.c)|[2-3](./rustlang/2/3.rs)|
 |Squeezing characters from string.|[2-4](./C/2/4.c)|[2-4](./rustlang/2/4.rs)|
+|Finding characters inside string.|[2-5](./C/2/5.c)|[2-5](./rustlang/2/5.rs)|
 |**Chapter 3**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 4**|---|---|
