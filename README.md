@@ -73,6 +73,7 @@ A tree defining the structure of this repo.
 |Finding characters inside string.|[2-5](./C/2/5.c)|[2-5](./rustlang/2/5.rs)|
 |Setting positioned bits in a number (_bitwise operators_).|[2-6](./C/2/6.c)|[2-6](./rustlang/2/6.rs)|
 |Inverting bits in a number (_bitwise operators_).|[2-7](./C/2/7.c)|[2-7](./rustlang/2/7.rs)|
+|Rotating bits in a number (_bitwise operators_).|[2-8](./C/2/8.c)|[2-8](./rustlang/2/8.rs)|
 |**Chapter 3**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 4**|---|---|

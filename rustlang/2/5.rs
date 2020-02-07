@@ -13,15 +13,15 @@ fn any(s1: &str, s2: &str) -> i32
     // we are count the number of characters inside the string not the real
     // index on the array (a character might be represented by more than one
     // byte!).
-    let mut idx : i32 = 0;
+    let mut _idx : i32 = 0;
 
     for _c2 in s2.chars() {
-        idx = 0;
+        _idx = 0;
         for _c1 in s1.chars() {
             if _c1 == _c2 {
-                return idx;
+                return _idx;
             }
-            idx += 1;
+            _idx += 1;
         }
     }
 

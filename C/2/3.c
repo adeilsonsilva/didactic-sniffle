@@ -14,6 +14,7 @@
  */
 long int htoi(char s[])
 {
+    int base, value = 0;
     int i = 0;
     int _size = strlen(s);
     long int result = 0;
@@ -23,8 +24,7 @@ long int htoi(char s[])
         i = 2;
     }
 
-    int base = (_size - i) - 1;
-    int value = 0;
+    base = (_size - i) - 1;
 
     /* If the number is too long, it will overflow anyway... */
     if (pow(16, base) > LONG_MAX) {
