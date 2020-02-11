@@ -75,6 +75,7 @@ A tree defining the structure of this repo.
 |Inverting bits in a number (_bitwise operators_).|[2-7](./C/2/7.c)|[2-7](./rustlang/2/7.rs)|
 |Rotating bits in a number (_bitwise operators_).|[2-8](./C/2/8.c)|[2-8](./rustlang/2/8.rs)|
 |Counting 1-bits in a number (_bitwise operators_).|[2-9](./C/2/9.c)|[2-9](./rustlang/2/9.rs)|
+|Converting ascii letters to lower case (_ternary operator_).|[2-10](./C/2/10.c)|[2-10](./rustlang/2/10.rs)|
 |**Chapter 3**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 4**|---|---|
