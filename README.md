@@ -78,6 +78,7 @@ A tree defining the structure of this repo.
 |Converting ascii letters to lower case (_ternary operator_).|[2-10](./C/2/10.c)|[2-10](./rustlang/2/10.rs)|
 |**Chapter 3**|---|---|
 |Binary search (_if-else statements_).|[3-1](./C/3/1.c)|[3-1](./rustlang/3/1.rs)|
+|Converting scape sequences (_switch statements_).|[3-2](./C/3/2.c)|[3-2](./rustlang/3/2.rs)|
 |**Chapter 4**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 5**|---|---|
