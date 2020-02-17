@@ -81,6 +81,7 @@ A tree defining the structure of this repo.
 |Converting scape sequences (_switch statements_).|[3-2](./C/3/2.c)|[3-2](./rustlang/3/2.rs)|
 |Expanding string sequences (_loops_).|[3-3](./C/3/3.c)|[3-3](./rustlang/3/3.rs)|
 |Converting numbers to strings (_loops_).|[3-4](./C/3/4.c)|[3-4](./rustlang/3/4.rs)|
+|Converting numbers to strings in a different base (_loops_).|[3-5](./C/3/5.c)|[3-5](./rustlang/3/5.rs)|
 |**Chapter 4**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 5**|---|---|
