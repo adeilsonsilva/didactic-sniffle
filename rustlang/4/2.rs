@@ -1,3 +1,8 @@
+/// Converts a string to a double.
+///
+/// @param  &str s The string to be converted
+///
+/// @return f64  Value of input string
 fn atof(s: &str) -> f64
 {
     let mut _result: f64 = 0.0;
@@ -70,6 +75,7 @@ fn atof(s: &str) -> f64
     _result
 }
 
+/// A program to test string to double conversion.
 fn main ()
 {
     print!("'{}' => {}\n", "123.45e-6", atof("123.45e-6"));

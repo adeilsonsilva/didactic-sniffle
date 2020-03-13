@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <ctype.h>
 
-/* atof:  convert string s to double */
+/**
+ * Converts a string to double
+ *
+ * @param char[] s The string to be converted
+ *
+ * @return double  Value of input string
+ */
 double atof(char s[])
 {
     double val, power, result;
@@ -49,6 +55,9 @@ double atof(char s[])
     return result;
 }
 
+/**
+ * A program to test string to double conversion.
+ */
 main ()
 {
     printf("'%s' => %f\n", "123.45e-6", atof("123.45e-6"));

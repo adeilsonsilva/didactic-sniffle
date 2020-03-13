@@ -1,8 +1,9 @@
 use std::io;
 
-/* Pattern to be searched for. */
+// Pattern to be searched for.
 const PATTERN : &str = "ould";
 
+/// A program to test pattern search.
 fn main()
 {
     let mut input = String::new();
@@ -29,14 +30,12 @@ fn main()
     }
 }
 
-/**
- * A function to check for the rightmost occurence of t in s.
- *
- * @param char[] s The string to be searched at
- * @param char[] t The pattern to be searched for
- *
- * @return int      Position of rightmost occurrence .
- */
+/// A function to check for the rightmost occurrence of t in s.
+///
+/// @param &str s The string to be searched at
+/// @param &str t The pattern to be searched for
+///
+/// @return i32   Position of rightmost occurrence of t inside s.
 fn strindex(s: &str, t: &str) -> i32
 {
     let mut rightmost : i32 = -1;
