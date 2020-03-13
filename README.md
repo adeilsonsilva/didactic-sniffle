@@ -85,6 +85,7 @@ A tree defining the structure of this repo.
 |Converting numbers to strings with padding characters (_loops_).|[3-6](./C/3/6.c)|[3-6](./rustlang/3/6.rs)|
 |**Chapter 4**|---|---|
 |Search for a pattern inside a string (_functions_).|[4-1](./C/4/1.c)|[4-1](./rustlang/4/1.rs)|
+|Converting strings with scientific notation into doubles (_functions_).|[4-2](./C/4/2.c)|[4-2](./rustlang/4/2.rs)|
 |**Chapter 5**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 6**|---|---|
