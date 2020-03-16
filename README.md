@@ -86,6 +86,7 @@ A tree defining the structure of this repo.
 |**Chapter 4**|---|---|
 |Search for a pattern inside a string (_functions_).|[4-1](./C/4/1.c)|[4-1](./rustlang/4/1.rs)|
 |Converting strings with scientific notation into doubles (_functions_).|[4-2](./C/4/2.c)|[4-2](./rustlang/4/2.rs)|
+|Adding modulus operation to a reverse Polish notation calculator (_functions_).|[4-3](./C/4/3.c)|[4-3](./rustlang/4/3.rs)|
 |**Chapter 5**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 6**|---|---|
