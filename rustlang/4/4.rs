@@ -1,8 +1,12 @@
 use std::io;
 
-const MAXOP : usize = 100;   /// Max size of operand or operator
-const NUMBER : char = '0';  /// Signal that a number was found
-const EOF : char = '#'; /// Simulate C EOF
+const MAXOP : usize = 100;    /// Max size of operand or operator
+const EOF : char = '#';       /// Simulate C EOF
+const NUMBER : char = '0';    /// Signal that a number was found
+const LAST : char = 'L';      /// signal that last value command was found
+const SWAP : char = 'S';      /// signal that swap command was found
+const DUPLICATE : char = 'D'; /// signal that duplicate command was found
+const CLEAR : char = 'C';     /// signal that clear was found
 
 const MAXVAL : usize = 100;             /// Maximum depth of operand stack
 static mut VAL : Vec<f32> = Vec::new(); /// Our operand stack
@@ -60,6 +64,10 @@ fn main()
                         print!("error: zero divisor\n");
                     }
                 },
+                LAST => { print!("top value: {}\n", last()); },
+                DUPLICATE => { duplicate(); },
+                SWAP => { swap(); },
+                CLEAR => { clear(); },
                 '\n' => { print!("\t{}\n", pop()); },
                 _ => { print!("error: unknown command {}\n", s); }
             }
@@ -88,6 +96,46 @@ unsafe fn pop() -> f32
         print!("error: stack empty\n");
         return 0.0;
     }
+}
+
+/* return top value from stack without popping */
+unsafe fn last() -> f32 {
+    if VAL.len() > 0 {
+        return *VAL.last().unwrap_or(&0.0);
+    } else {
+        print!("error: stack empty\n");
+        return 0.0;
+    }
+}
+
+/* duplicate top value from stack */
+unsafe fn duplicate() {
+    if VAL.len() > 0 {
+        push(last());
+    } else {
+        print!("error: stack empty\n");
+    }
+}
+
+/* swap top two values from stack */
+unsafe fn swap() {
+    let aux1 : f32;
+    let aux2 : f32;
+
+    if VAL.len() >= 2 {
+        aux1 = pop();
+        aux2 = pop();
+        push(aux1);
+        push(aux2);
+    } else {
+        print!("error: can't swap with {} elements\n", VAL.len());
+    }
+}
+
+/* clear all stack */
+unsafe fn clear() {
+    print!("stack cleared\n");
+    VAL.clear();
 }
 
 /// getop:  get next character or numeric operand
