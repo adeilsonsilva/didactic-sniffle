@@ -21,6 +21,7 @@ fn main()
 {
     let mut _type : char;
     let mut op2 : f32;
+    let mut aux : f32;
 
     let mut s = String::new();
     s.reserve(MAXOP);
@@ -62,6 +63,17 @@ fn main()
                         push(pop() as f32 % op2 as f32);
                     } else {
                         print!("error: zero divisor\n");
+                    }
+                },
+                'S' => { push( pop().sin() ); },
+                'E' => { push( pop().exp() ); },
+                '^' => {
+                    op2 = pop();
+                    aux = pop();
+                    if aux == 0.0 && op2 <= 0.0 {
+                        print!("error: pow({}, {}) is not a valid operation.\n", aux, op2);
+                    } else {
+                        push( aux.powf(op2) );
                     }
                 },
                 LAST => { print!("top value: {}\n", last()); },

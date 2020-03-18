@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>  /* for  atof() */
+#include <math.h>    /* for  sin(), exp() and pow() */
 
 #define MAXOP 100      /* max size of operand or operator */
 #define NUMBER '0'     /* signal that a number was found */
@@ -20,7 +21,7 @@ void clear(void);
 main()
 {
     int type;
-    double op2;
+    double op2, aux;
     char s[MAXOP];
 
     while ((type = getop(s)) != EOF) {
@@ -51,6 +52,20 @@ main()
                 push((int) pop() % (int) op2);
             else
                 printf("error: zero divisor\n");
+        case 'S':
+            push(sin(pop()));
+            break;
+        case 'E':
+            push(exp(pop()));
+            break;
+        case '^':
+            op2 = pop();
+            aux = pop();
+            if (aux == 0.0 && op2 <= 0.0) {
+                printf("error: pow(%f, %f) is not a valid operation.\n", aux, op2);
+            } else {
+                push(pow(aux, op2));
+            }
             break;
         case LAST:
             printf("top value: %f\n", last());
