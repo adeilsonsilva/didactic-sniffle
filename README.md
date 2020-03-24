@@ -89,6 +89,7 @@ A tree defining the structure of this repo.
 |Adding modulus operation to a reverse Polish notation calculator (_functions_).|[4-3](./C/4/3.c)|[4-3](./rustlang/4/3.rs)|
 |Adding new stack operations to a reverse Polish notation calculator (_functions_).|[4-4](./C/4/4.c)|[4-4](./rustlang/4/4.rs)|
 |Adding new math operations to a reverse Polish notation calculator (_functions_).|[4-5](./C/4/5.c)|[4-5](./rustlang/4/5.rs)|
+|Handling variables in a reverse Polish notation calculator (_functions_).|[4-6](./C/4/6.c)|[4-6](./rustlang/4/6.rs)|
 |**Chapter 5**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 6**|---|---|
