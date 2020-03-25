@@ -92,6 +92,8 @@ A tree defining the structure of this repo.
 |Handling variables in a reverse Polish notation calculator (_functions_).|[4-6](./C/4/6.c)|[4-6](./rustlang/4/6.rs)|
 |Input buffering in a reverse Polish notation calculator (_functions_).|[4-7](./C/4/7.c)|[4-7](./rustlang/4/7.rs)|
 |Changing input buffering in a reverse Polish notation calculator (_functions_).|[4-8](./C/4/8.c)|[4-8](./rustlang/4/8.rs)|
+|Dealing with EOF in the buffer of a reverse Polish notation calculator (_functions_).|[4-9](./C/4/9.c)|[4-9](./rustlang/4/9.rs)|
+|Remove buffering in a reverse Polish notation calculator (_functions_).|[4-10](./C/4/10.c)|[4-10](./rustlang/4/10.rs)|
 |**Chapter 5**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 6**|---|---|

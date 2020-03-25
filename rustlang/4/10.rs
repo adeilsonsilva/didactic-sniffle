@@ -13,9 +13,6 @@ const FAKE_DOUBLE_MIN : f32 = -999999.0; /// set a minimum value for stack opera
 const MAXVAL : usize = 100;             /// Maximum depth of operand stack
 static mut VAL : Vec<f32> = Vec::new(); /// Our operand stack
 
-const BUFSIZE : usize = 1;                  /// Max size for ungetch buffer
-static mut BUFFER : Vec<char> = Vec::new(); /// Buffer to control characters read from input (ungetch)
-
 static mut INPUT : String = String::new(); /// Holds characters from stdin (getchar simulation)
 
 /// reverse Polish calculator
@@ -191,7 +188,7 @@ unsafe fn getop(s: &mut String) -> char
 
     s.clear();
     loop {
-        c = getch();
+        c = getchar();
 
         if c != ' ' && c != '\t' {
             break;
@@ -206,7 +203,7 @@ unsafe fn getop(s: &mut String) -> char
 
     if c.is_digit(10) { // collect integer part
         loop {
-            c = getch();
+            c = getchar();
 
             if c.is_digit(10) {
                 s.push(c);
@@ -218,7 +215,7 @@ unsafe fn getop(s: &mut String) -> char
 
     if c == '.' { // collect fraction part
         loop {
-            c = getch();
+            c = getchar();
 
             if c.is_digit(10) {
                 s.push(c);
@@ -228,29 +225,7 @@ unsafe fn getop(s: &mut String) -> char
         }
     }
 
-    if c != EOF {
-        ungetch(c);
-    }
-
     return NUMBER;
-}
-
-/// get a (possibly pushed-back) character
-/// It is unsafe because we manipulate a static mut variable inside it.
-unsafe fn getch() -> char
-{
-    return  if BUFFER.len() == 1 { BUFFER.pop().unwrap_or(EOF) } else { getchar() };
-}
-
-/// push character back on input
-/// It is unsafe because we manipulate a static mut variable inside it.
-unsafe fn ungetch(c: char)
-{
-    if BUFFER.len() >= BUFSIZE {
-        print!("ungetch: too many characters\n");
-    } else {
-        BUFFER.push(c);
-    }
 }
 
 /// A simulation of C getchar function.
@@ -277,3 +252,4 @@ unsafe fn getchar() -> char
 
     c.unwrap_or(EOF)
 }
+
