@@ -6,10 +6,10 @@ const TABSTOP : i32 = 4;
 
 
 /// A function to apply the optimal amount of blank characters between two columns
-/// 
+///
 /// @param int  start  The base column before whitespace sequence
 /// @param int  end    The end column after whitespace sequence
-/// 
+///
 /// @return void
 fn entab (_start: i32, _end: i32)
 {
@@ -88,7 +88,7 @@ fn main ()
                     // We don't need to deal with newline characters, 'read_line'
                     // does it for us.
                     current_column += if _c == '\t' {
-                                        (TABSTOP - current_column % TABSTOP)
+                                        TABSTOP - current_column % TABSTOP
                                     } else {
                                         1
                                     };

@@ -61,7 +61,7 @@ fn main ()
                     // does it for us.
                     // Using rust expression assignment
                     current_column += if _c == '\t' {
-                        (TABSTOP - current_column % TABSTOP)
+                        TABSTOP - current_column % TABSTOP
                     } else {
                         1
                     }
