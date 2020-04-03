@@ -96,6 +96,7 @@ A tree defining the structure of this repo.
 |Remove buffering in a reverse Polish notation calculator (_functions_).|[4-10](./C/4/10.c)|[4-10](./rustlang/4/10.rs)|
 |Modifying variable visibility in a reverse Polish notation calculator (_header files, external and static variables_).|[4-11](./C/4/11/main.c)|[4-11](./rustlang/4/11/main.rs)|
 |Converting int to string recursively (_recursive functions_).|[4-12](./C/4/12.c)|[4-12](./rustlang/4/12.rs)|
+|Reversing a string recursively (_recursive functions_).|[4-13](./C/4/13.c)|[4-13](./rustlang/4/13.rs)|
 |**Chapter 5**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 6**|---|---|
