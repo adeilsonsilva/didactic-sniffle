@@ -100,6 +100,7 @@ A tree defining the structure of this repo.
 |Swapping values using macros (_macro substitutions_).|[4-14](./C/4/14.c)|[4-14](./rustlang/4/14.rs)|
 |**Chapter 5**|---|---|
 |Reading ints from char stream (_pointers_).|[5-1](./C/5/1.c)|[5-1](./rustlang/5/1.rs)|
+|Reading floats from char stream (_pointers_).|[5-2](./C/5/2.c)|[5-2](./rustlang/5/2.rs)|
 |**Chapter 6**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 7**|---|---|
