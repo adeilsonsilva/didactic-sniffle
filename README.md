@@ -99,7 +99,7 @@ A tree defining the structure of this repo.
 |Reversing a string recursively (_recursive functions_).|[4-13](./C/4/13.c)|[4-13](./rustlang/4/13.rs)|
 |Swapping values using macros (_macro substitutions_).|[4-14](./C/4/14.c)|[4-14](./rustlang/4/14.rs)|
 |**Chapter 5**|---|---|
-||[TBI](./C/)|[TBI](./rustlang/)|
+|Reading ints from char stream (_pointers_).|[5-1](./C/5/1.c)|[5-1](./rustlang/5/1.rs)|
 |**Chapter 6**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 7**|---|---|
