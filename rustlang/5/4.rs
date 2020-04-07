@@ -1,9 +1,9 @@
 /// Checks if string t occurs at the end of the string s.
 ///
-/// @param s     String to be looked at
-/// @param t     String to be searched for
+/// @param s      String to be looked at
+/// @param t      String to be searched for
 ///
-/// @return bool  1 if occurs 0 otherwise
+/// @return bool  True if occurs false otherwise
 fn strend(s: &str, t: &str) -> bool
 {
     let source_size = s.len();

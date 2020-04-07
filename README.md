@@ -103,6 +103,7 @@ A tree defining the structure of this repo.
 |Reading floats from char stream (_pointers_).|[5-2](./C/5/2.c)|[5-2](./rustlang/5/2.rs)|
 |Implementing strcat (_pointers_).|[5-3](./C/5/3.c)|[5-3](./rustlang/5/3.rs)|
 |Implementing strend (_pointers_).|[5-4](./C/5/4.c)|[5-4](./rustlang/5/4.rs)|
+|Implementing strncpy, ctrncat and strncmp (_pointers_).|[5-5](./C/5/5.c)|[5-5](./rustlang/5/5.rs)|
 |**Chapter 6**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 7**|---|---|
