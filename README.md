@@ -101,6 +101,7 @@ A tree defining the structure of this repo.
 |**Chapter 5**|---|---|
 |Reading ints from char stream (_pointers_).|[5-1](./C/5/1.c)|[5-1](./rustlang/5/1.rs)|
 |Reading floats from char stream (_pointers_).|[5-2](./C/5/2.c)|[5-2](./rustlang/5/2.rs)|
+|Implementing strcat (_pointers_).|[5-3](./C/5/3.c)|[5-3](./rustlang/5/3.rs)|
 |**Chapter 6**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 7**|---|---|
