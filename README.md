@@ -106,6 +106,7 @@ A tree defining the structure of this repo.
 |Implementing strncpy, strncat and strncmp (_pointers_).|[5-5](./C/5/5.c)|[5-5](./rustlang/5/5.rs)|
 |Reimplementing some functions using pointers (_pointers_).|[5-6](./C/5/6.c)|[5-6](./rustlang/5/6.rs)|
 |Implementing 'sort' unix command (_pointers_).|[5-7](./C/5/7.c)|[5-7](./rustlang/5/7.rs)|
+|Manipulating dates (_pointers_).|[5-8](./C/5/8.c)|[5-8](./rustlang/5/8.rs)|
 |**Chapter 6**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 7**|---|---|
