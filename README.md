@@ -107,6 +107,7 @@ A tree defining the structure of this repo.
 |Reimplementing some functions using pointers (_pointers_).|[5-6](./C/5/6.c)|[5-6](./rustlang/5/6.rs)|
 |Implementing 'sort' unix command (_pointers_).|[5-7](./C/5/7.c)|[5-7](./rustlang/5/7.rs)|
 |Manipulating dates (_pointers_).|[5-8](./C/5/8.c)|[5-8](./rustlang/5/8.rs)|
+|Manipulating dates without array indexing (_pointers_).|[5-9](./C/5/9.c)|[5-9](./rustlang/5/9.rs)|
 |**Chapter 6**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 7**|---|---|
