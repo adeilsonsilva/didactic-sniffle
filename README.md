@@ -108,6 +108,7 @@ A tree defining the structure of this repo.
 |Implementing 'sort' unix command (_pointers_).|[5-7](./C/5/7.c)|[5-7](./rustlang/5/7.rs)|
 |Manipulating dates (_pointers_).|[5-8](./C/5/8.c)|[5-8](./rustlang/5/8.rs)|
 |Manipulating dates without array indexing (_pointers_).|[5-9](./C/5/9.c)|[5-9](./rustlang/5/9.rs)|
+|Reverse Polish notation calculator (_command line arguments_).|[5-10](./C/5/10.c)|[5-10](./rustlang/5/10.rs)|
 |**Chapter 6**|---|---|
 ||[TBI](./C/)|[TBI](./rustlang/)|
 |**Chapter 7**|---|---|
